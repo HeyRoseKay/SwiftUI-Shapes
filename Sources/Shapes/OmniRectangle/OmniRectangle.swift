@@ -9,6 +9,32 @@
 import SwiftUI
 
 public struct OmniRectangle: Shape {
+
+    public struct RectEdge : OptionSet, @unchecked Sendable {
+        public var rawValue: UInt
+    
+        public init(rawValue: UInt) {
+            self.rawValue = rawValue
+        }
+        public static var top: RectEdge = RectEdge(rawValue: 1 << 0)
+        public static var left: RectEdge = RectEdge(rawValue: 1 << 1)
+        public static var bottom: RectEdge = RectEdge(rawValue: 1 << 2)
+        public static var right: RectEdge = RectEdge(rawValue: 1 << 3)
+        public static var all: RectEdge = [.top, .left, .bottom, .right]
+    }
+
+    public struct RectCorner : OptionSet, @unchecked Sendable {
+        public var rawValue: UInt
+        public init(rawValue: UInt) {
+            self.rawValue = rawValue
+        }
+        public static var topLeft: RectCorner = RectCorner(rawValue: 1 << 0)
+        public static var topRight: RectCorner = RectCorner(rawValue: 1 << 1)
+        public static var bottomLeft: RectCorner = RectCorner(rawValue: 1 << 2)
+        public static var bottomRight: RectCorner = RectCorner(rawValue: 1 << 3)
+        public static var allCorners: RectCorner = [.topLeft, .topRight, .bottomLeft, .bottomRight]
+    }
+    
     private var insetAmount: CGFloat = 0
     private var cornerStyles: CornerStyles
     private var edgeStyles: EdgeStyles
