@@ -21,7 +21,7 @@ extension OmniRectangle {
             self.bottomRight = bottomRight
         }
         
-        public init(_ corners: UIRectCorner = .allCorners, style: CornerStyle) {
+        public init(_ corners: RectCorner = .allCorners, style: CornerStyle) {
             self.topLeft     = corners.contains(.topLeft)     ? style : .square
             self.bottomLeft  = corners.contains(.bottomLeft)  ? style : .square
             self.topRight    = corners.contains(.topRight)    ? style : .square
