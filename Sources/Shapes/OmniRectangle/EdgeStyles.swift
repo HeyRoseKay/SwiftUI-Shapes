@@ -21,7 +21,7 @@ extension OmniRectangle {
             self.bottomCurvature = bottomCurvature
         }
         
-        public init(_ edges: UIRectEdge = .all, curvature: CGFloat) {
+        public init(_ edges: RectEdge = .all, curvature: CGFloat) {
             self.leftCurvature   = edges.contains(.left)   ? curvature : 0
             self.topCurvature    = edges.contains(.top)    ? curvature : 0
             self.rightCurvature  = edges.contains(.right)  ? curvature : 0
