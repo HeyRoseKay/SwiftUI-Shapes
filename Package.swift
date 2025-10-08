@@ -12,7 +12,7 @@ let package = Package(
             targets: ["Shapes"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/HeyRoseKay/CGExtender.git", from: .branch("master"))
+        .package(url: "https://github.com/HeyRoseKay/CGExtender.git", .branch("master"))
     ],
     targets: [
         .target(
