@@ -10,10 +10,10 @@
     <img src="https://img.shields.io/github/followers/kieranb662?label=Follow" alt="kieranb662 followers" />
 </p>
 
-Commonly used shapes for SwiftUI, some I found on the web [swiftui-lab](https://swiftui-lab.com) and [objc.io](https://www.objc.io/blog/2019/12/16/drawing-trees), others I made myself.
-I hope to create community based repo for cool animated shapes, paths, etc. If you would like to submit some of your own shapes just make a pull request and I will try to approve it ASAP. If you want to try out this package just clone the [Example Project](https://github.com/HeyRoseKay/Shapes-Examples)
-
 (Forked from [Kieran](https://github.com/kieranb662))
+
+Commonly used shapes for SwiftUI, some I found on the web [swiftui-lab](https://swiftui-lab.com) and [objc.io](https://www.objc.io/blog/2019/12/16/drawing-trees), others I made myself.
+If you want to try out this package just clone the [Example Project](https://github.com/HeyRoseKay/Shapes-Examples)
 
 Or create your own shapes using the [bez editor](https://apps.apple.com/us/app/bez-editor/id1508764103) app available for free on iOS 13.4 and greater. 
 
